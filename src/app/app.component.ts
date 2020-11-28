@@ -3,19 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h2 *ngIf ="isTrue; else elseBlock">
-    codeevolution
-  </h2>
-
-  <ng-template #elseBlock>
-    <h2>
-      name is hidden
-    </h2>
-  </ng-template>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">you picked red color</div>
+  <div *ngSwitchCase="'blue'">you picked blue color</div>
+<div>
   `,
   styles: ['./app.component.css']
 })
 export class AppComponent {
+
+  public color="red";
   title = 'codeevalution';
   public isTrue=false;
 }
