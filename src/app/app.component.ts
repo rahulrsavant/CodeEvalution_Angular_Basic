@@ -2,15 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-<div *ngFor="let color of colors">
-  {{color}}
-<div>
-  `,
+  templateUrl:'./app.component.html' ,
   styles: ['./app.component.css']
 })
+
 export class AppComponent {
 
-  public colors= ['red','green','blue'];
+  public title="my_project_title";
+  public name="vidula_infotech";
   constructor(){}
 }
