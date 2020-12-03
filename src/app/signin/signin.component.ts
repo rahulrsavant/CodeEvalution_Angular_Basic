@@ -8,6 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class SigninComponent implements OnInit {
 
+  public clsname1='one';
+  public clsname2='two';
   constructor() { }
 
   ngOnInit(): void {

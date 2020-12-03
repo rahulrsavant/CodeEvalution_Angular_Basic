@@ -1,0 +1,12 @@
+input.ng-touched.ng-invalid{
+    border-color: red;
+}
+
+.one{
+    background-color: green;
+}
+
+.two{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+}
